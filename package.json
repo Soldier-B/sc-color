@@ -1,0 +1,13 @@
+{
+    "name"          :   "pusher.color",
+    "author"        :   "Pusher, Inc.",
+    "homepage"      :   "http://tech.pusherhq.com",
+    "description"   :   "",
+
+    "version"       :   "0.2.2",
+    
+    "dependencies": 
+    {
+        "underscore"        : "1.4.x"
+    }
+}
