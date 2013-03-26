@@ -1,13 +1,26 @@
 {
     "name"          :   "pusher.color",
-    "author"        :   "Pusher, Inc.",
+    "author"        :   "Pusher, Inc. <tech@pusherhq.com>",
     "homepage"      :   "http://tech.pusherhq.com",
     "description"   :   "A flexible, intuitive Javascript color manipulation library",
-
     "version"       :   "0.2.2",
+    "license"       :   "MIT",
     
     "dependencies": 
     {
         "underscore"        : "1.4.x"
+    },
+    
+    "devDependencies":
+    {
+        "nodeunit"          : "*",
+        "benchmark"         : "*",        
+        "pusher.nodeenv"    : "https://bitbucket.org/pusherhq/pusher.nodeenv/get/master.tar.gz"
+    },
+    
+    "repository": 
+    {
+        "type"      : "git",
+        "url"       : "https://bitbucket.org/pusherhq/pusher.color.git"    
     }
 }
