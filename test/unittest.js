@@ -419,6 +419,124 @@ suite["Base"] =
     }    
 };
 
+suite["Methods"] =
+{
+    "add" : function (test)
+    {
+        var white = color('rgb', 255, 255, 255);
+        var black = color('rgb', 0,0,0);
+        var red   = color('rgb', 255,0,0);
+    
+        var table = [
+            [ black,    black,      [ 0, 0, 0, 255 ] ],
+            [ white,    black,      [ 255, 255, 255, 255 ] ],
+            [ white,    white,      [ 255, 255, 255, 255 ] ],
+            [ black,    red,        [ 255, 0, 0, 255 ] ],
+            [ red,      black,      [ 255, 0, 0, 255 ] ],
+        ];
+        
+        _.each(table, function (row)
+        {
+            // Make sure the addition is correct
+            test.deepEqual( row[0].add(row[1]).rgba8(), row[2] );
+            
+            // Make sure the base colors were not affected
+            test.deepEqual( white.rgba8(), [ 255, 255, 255, 255 ]);
+            test.deepEqual( black.rgba8(), [ 0, 0, 0, 255 ]);
+        });
+        test.done();
+    },
+    
+    "sub" : function (test)
+    {
+        var white = color('rgb', 255, 255, 255);
+        var black = color('rgb', 0,0,0);
+        var red   = color('rgb', 255,0,0);
+    
+        var table = [
+            [ black,    black,      [ 0, 0, 0, 255 ] ],
+            [ white,    black,      [ 255, 255, 255, 255 ] ],
+            [ white,    white,      [ 0, 0, 0, 255 ] ],
+            [ black,    red,        [ 0, 0, 0, 255 ] ],
+            [ red,      black,      [ 255, 0, 0, 255 ] ],
+        ];
+        
+        _.each(table, function (row)
+        {
+            // Make sure the addition is correct
+            test.deepEqual( row[0].sub(row[1]).rgba8(), row[2], row[0].rgba8() + " - " + row[1].rgba8() );
+            
+            // Make sure the reference colors were not affected
+            test.deepEqual( white.rgba8(), [ 255, 255, 255, 255 ]);
+            test.deepEqual( black.rgba8(), [ 0, 0, 0, 255 ]);
+        });
+        test.done();
+    },      
+    
+    "inc" : function (test)
+    {
+        var white = color('rgb', 255, 255, 255);
+        var black = color('rgb', 0,0,0);
+        var red   = color('rgb', 255,0,0);
+    
+        var table = [
+            [ black,    black,      [ 0, 0, 0, 255 ] ],
+            [ white,    black,      [ 255, 255, 255, 255 ] ],
+            [ white,    white,      [ 255, 255, 255, 255 ] ],
+            [ black,    red,        [ 255, 0, 0, 255 ] ],
+            [ red,      black,      [ 255, 0, 0, 255 ] ],
+        ];
+        
+        _.each(table, function (row)
+        {
+            var base = row[0].clone();
+        
+            // Make sure the addition is correct
+            test.deepEqual( base.inc(row[1]).rgba8(), row[2] );
+
+            // Make sure the base value was changed
+            test.deepEqual( base.rgba8(), row[2] );
+            
+            // Make sure the reference colors were not affected
+            test.deepEqual( white.rgba8(), [ 255, 255, 255, 255 ]);
+            test.deepEqual( black.rgba8(), [ 0, 0, 0, 255 ]);
+        });
+        test.done();
+    },
+    
+    "dec" : function (test)
+    {
+        var white = color('rgb', 255, 255, 255);
+        var black = color('rgb', 0,0,0);
+        var red   = color('rgb', 255,0,0);
+    
+        var table = [
+            [ black,    black,      [ 0, 0, 0, 255 ] ],
+            [ white,    black,      [ 255, 255, 255, 255 ] ],
+            [ white,    white,      [ 0, 0, 0, 255 ] ],
+            [ black,    red,        [ 0, 0, 0, 255 ] ],
+            [ red,      black,      [ 255, 0, 0, 255 ] ],
+        ];
+        
+        _.each(table, function (row)
+        {
+            var base = row[0].clone();
+        
+            // Make sure the addition is correct
+            test.deepEqual( base.dec(row[1]).rgba8(), row[2], row[0].rgba8() + " -= " + row[1].rgba8() );
+
+            // Make sure the base value was changed
+            test.deepEqual( base.rgba8(), row[2] );
+            
+            // Make sure the reference colors were not affected
+            test.deepEqual( white.rgba8(), [ 255, 255, 255, 255 ]);
+            test.deepEqual( black.rgba8(), [ 0, 0, 0, 255 ]);
+        });
+        test.done();
+    },  
+    
+};
+
 suite["Regressions"] = 
 {
     "Set 1" : function (test)
