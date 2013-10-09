@@ -1,31 +1,26 @@
 {
-    "name"          :   "surfacecurve-color",
-    "author"        : "Benjamin Cronin",
-    "homepage"      :   "http://surfacecurve.org",
-    "description"   :   "A flexible, intuitive Javascript color manipulation library",
-    "version"       :   "0.2.5",
-    "license"       :   "MIT",     
-    "private"       : false,
-    "main"          :   "./lib/surfacecurve-color.js",
-    "scripts"   : {
-        "test" : "nodeunit test"
+    "name": "surfacecurve-color",
+    "author": "Benjamin Cronin",
+    "homepage": "http://surfacecurve.org",
+    "description": "A flexible, intuitive Javascript color manipulation library",
+    "version": "0.2.6",
+    "license": "MIT",
+    "private": false,
+    "main": "./lib/surfacecurve-color.js",
+    "scripts": {
+        "test": "nodeunit test"
     },
-    
-    "dependencies": 
-    {
-        "underscore"        : "1.4.x"
+    "dependencies": {
+        "underscore": "1.4.x"
     },
-    
-    "devDependencies":
-    {
-        "nodeunit"          : "*",
-        "benchmark"         : "*",        
-        "pusher.nodeenv"    : "https://bitbucket.org/pusherhq/pusher.nodeenv/get/master.tar.gz"
+    "devDependencies": {
+        "nodeunit": "*",
+        "benchmark": "*",
+        "pusher.nodeenv": "https://bitbucket.org/pusherhq/pusher.nodeenv/get/master.tar.gz"
     },
-    
-    "repository": 
-    {
-        "type"      : "git",
-        "url"       : "https://bitbucket.org/pusherhq/pusher.color.git"    
-    }
+    "repository": {
+        "type": "git",
+        "url": "https://bitbucket.org/pusherhq/pusher.color.git"
+    },
+    "commitHash": "510fdc11e0de6f99fec93ddacca8ebbb7ceafb60"
 }
