@@ -3,7 +3,7 @@
     "author": "Benjamin Cronin",
     "homepage": "http://surfacecurve.org",
     "description": "A flexible, intuitive Javascript color manipulation library",
-    "version": "0.2.6",
+    "version": "0.3.0",
     "license": "MIT",
     "private": false,
     "main": "./lib/surfacecurve-color.js",
@@ -21,5 +21,5 @@
         "type": "git",
         "url": "https://bitbucket.org/pusherhq/pusher.color.git"
     },
-    "commitHash": "510fdc11e0de6f99fec93ddacca8ebbb7ceafb60"
+    "commitHash": "8e405b82295eafd801bbeb45166114b2a1d5db2f"
 }
