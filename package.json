@@ -5,6 +5,7 @@
     "description"   :   "A flexible, intuitive Javascript color manipulation library",
     "version"       :   "0.2.5",
     "license"       :   "MIT",     
+    "private"       : false,
     "main"          :   "./lib/surfacecurve-color.js",
     "scripts"   : {
         "test" : "nodeunit test"
