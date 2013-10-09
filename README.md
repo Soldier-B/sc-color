@@ -37,6 +37,10 @@ Released under the [MIT License](http://opensource.org/licenses/MIT).
 
 ### Change Log
 
+##### Todo
+
+* browserify / require() support
+
 ##### 0.3.0
 
 * Renamed to ``surfacecurve-color`` 
