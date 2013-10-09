@@ -535,6 +535,104 @@ suite["Methods"] =
         test.done();
     },  
     
+    
+    "luminanceFast" : function (test)
+    {        
+        var table = [
+            [ [0,0,0],          0.0     ],
+            [ [255,255,255],    1.0     ],
+            [ [255,0,0],        0.2126  ],
+            [ [0,255,0],        0.7152  ],
+            [ [0,0,255],        0.0722  ],
+            [ [64,128,255],     0.48456078  ],
+        ];
+        
+        _.each(table, function (row)
+        {
+            var base = color('rgb', row[0][0], row[0][1], row[0][2]);
+        
+            // Make sure the addition is correct
+            test.equal( base.luminanceFast().toFixed(4), row[1].toFixed(4) );
+        });
+        test.done();
+    },
+    
+    "luminance" : function (test)
+    {        
+        var table = [
+            [ [0,0,0],          0.0     ],
+            [ [255,255,255],    1.0     ],
+            [ [255,0,0],        0.2126  ],
+            [ [0,255,0],        0.7152  ],
+            [ [0,0,255],        0.0722  ],
+            [ [64,128,255],     0.2375  ],
+        ];
+        
+        _.each(table, function (row)
+        {
+            var base = color('rgb', row[0][0], row[0][1], row[0][2]);
+        
+            // Make sure the addition is correct
+            test.equal( base.luminance().toFixed(4), row[1].toFixed(4) );
+        });
+        test.done();
+    },
+    
+    "contrastWhiteBlack" : function (test)
+    {
+        var white = [ 255, 255, 255 ];
+        var black = [ 0, 0, 0 ];
+        
+        var table = [
+            [ [0,0,0],          white  ],
+            [ [255,255,255],    black  ],
+            [ [255,0,0],        black  ],
+            [ [0,255,0],        black  ],
+            [ [0,0,255],        black  ],
+            [ [64,128,255],     black  ],
+            [ [0,0,90],         white  ],
+            [ [0,0,100],        white  ],
+            [ [0,0,140],        black  ],
+            [ [0,0,180],        black  ],
+        ];
+        
+        _.each(table, function (row)
+        {
+            var base = color('rgb', row[0][0], row[0][1], row[0][2]);
+        
+            // Make sure the addition is correct
+            test.deepEqual( base.contrastWhiteBlack().rgb8(), row[1], "color " + row[0] );
+        });
+        test.done();
+    },
+    
+    "contrastText" : function (test)
+    {
+        var white = [ 255, 255, 255 ];
+        var black = [ 0, 0, 0 ];
+        
+        var table = [
+            [ [0,0,0],          white  ],
+            [ [255,255,255],    black  ],
+            [ [255,0,0],        white  ],
+            [ [0,255,0],        black  ],
+            [ [0,0,255],        white  ],
+            [ [64,128,255],     white  ],
+            [ [0,0,90],         white  ],
+            [ [0,0,100],        white  ],
+            [ [0,0,140],        white  ],
+            [ [0,0,180],        white  ],
+        ];
+        
+        _.each(table, function (row, i)
+        {
+            var base = color('rgb', row[0][0], row[0][1], row[0][2]);
+        
+            // Make sure the addition is correct
+            test.deepEqual( base.contrastText().rgb8(), row[1], "color[" + i + "]: " + row[0]  );
+        });
+        test.done();
+    }
 };
 
 suite["Regressions"] = 

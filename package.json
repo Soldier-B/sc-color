@@ -1,12 +1,15 @@
 {
     "name"          :   "pusher.color",
-    "author"        :   "Pusher, Inc. <tech@pusherhq.com>",
+    "author"        :   "Benjamin Cronin <ben@pusherhq.com>",
     "homepage"      :   "http://tech.pusherhq.com",
     "description"   :   "A flexible, intuitive Javascript color manipulation library",
-    "version"       :   "0.2.4",
+    "version"       :   "0.2.5",
     "license"       :   "MIT",
      
     "main"          :   "./lib/pusher.color.js",
+    "scripts"   : {
+        "test" : "nodeunit test"
+    },
     
     "dependencies": 
     {
