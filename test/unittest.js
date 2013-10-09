@@ -24,7 +24,7 @@
 */
 
 var nodeenv = require("pusher.nodeenv"),
-    color   = require("../lib/pusher.color.js"),
+    color   = require("../lib/surfacecurve-color.js"),
     _       = require("underscore");
 
 var suite = {};

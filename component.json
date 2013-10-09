@@ -1,5 +1,0 @@
-{
-    "name"    : "pusher.color",
-    "version" : "0.2.5",
-    "main"    : "./lib/pusher.color.js"
-}

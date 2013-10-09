@@ -1,12 +1,11 @@
 {
-    "name"          :   "pusher.color",
-    "author"        :   "Benjamin Cronin <ben@pusherhq.com>",
-    "homepage"      :   "http://tech.pusherhq.com",
+    "name"          :   "surfacecurve-color",
+    "author"        : "Benjamin Cronin",
+    "homepage"      :   "http://surfacecurve.org",
     "description"   :   "A flexible, intuitive Javascript color manipulation library",
     "version"       :   "0.2.5",
-    "license"       :   "MIT",
-     
-    "main"          :   "./lib/pusher.color.js",
+    "license"       :   "MIT",     
+    "main"          :   "./lib/surfacecurve-color.js",
     "scripts"   : {
         "test" : "nodeunit test"
     },
