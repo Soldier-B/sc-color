@@ -15,7 +15,6 @@
     },
     "devDependencies": {
         "nodeunit": "*",
-        "benchmark": "*",
         "pusher.nodeenv": "https://bitbucket.org/pusherhq/pusher.nodeenv/get/master.tar.gz"
     },
     "repository": {
