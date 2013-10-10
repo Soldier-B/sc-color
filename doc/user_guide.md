@@ -11,6 +11,26 @@ The ``surfacecurve-color`` library is a Javascript library for parsing, manipula
 
 ## Usage
 
+### Installation
+
+The library is intended to work both on the server and browser.
+
+##### Browser
+
+<pre class="prettycode">
+&lt;script src="surfacecurve-color.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+    var color = require("surfacecurve-color");
+&lt;/script&gt;
+</pre>
+
+##### Server
+
+<pre class="prettycode">
+var color = require("surfacecurve-color");
+</pre>
+
+
 ### Parsing
 
 The library aims to conveniently support many different forms of color specification, so that it will work well within many host applications. See the full documentation for all support color and number formats.
