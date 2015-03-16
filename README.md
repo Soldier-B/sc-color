@@ -37,6 +37,7 @@ Released under the [MIT License](http://opensource.org/licenses/MIT).
 
 ##### Todo
 
+* jshint support, proper build step
 * browserify / require() support
 
 ##### 0.3.0
