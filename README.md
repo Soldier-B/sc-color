@@ -1,6 +1,6 @@
 # surfacecurve-color
 
-A flexible, intuitive Javascript color manipulation library.
+A JavaScript color parsing and manipulation library designed for convenience and flexibility (rather than runtime performance).
 
 ## Usage
 
@@ -17,8 +17,6 @@ TBD.
 ## Unit Tests
 
 	$ npm test
-
-Currently requires a global install of ``nodeunit``.
 
 ## License
 

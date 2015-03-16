@@ -1,25 +1,26 @@
 {
-    "name": "surfacecurve-color",
-    "author": "Benjamin Cronin",
-    "homepage": "http://surfacecurve.org",
-    "description": "A flexible, intuitive Javascript color manipulation library",
-    "version": "0.3.1",
-    "license": "MIT",
-    "private": false,
-    "main": "./lib/surfacecurve-color.js",
-    "scripts": {
-        "test": "nodeunit test"
-    },
-    "dependencies": {
-        "underscore": "1.4.x"
-    },
-    "devDependencies": {
-        "nodeunit": "*",
-        "pusher.nodeenv": "https://bitbucket.org/pusherhq/pusher.nodeenv/get/master.tar.gz"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://bitbucket.org/bcronin/surfacecurve-color.git"
-    },
-    "commitHash": "0c49d14d40b9f797b3ba21382808fa0439c6104d"
+  "name": "surfacecurve-color",
+  "author": "Benjamin Cronin",
+  "description": "A JavaScript color parsing and manipulation library designed for convenience and flexibility (rather than runtime performance).",
+  "homepage": "http://surfacecurve.org",
+  "version": "0.3.1",
+  "license": "MIT",
+  "private": false,
+  "main": "./lib/surfacecurve-color.js",
+  "scripts": {
+    "test": "node node_modules/nodeunit/bin/nodeunit test"
+  },
+  "dependencies": {
+    "nodeunit": "^0.9.1",
+    "underscore": "1.4.x"
+  },
+  "devDependencies": {
+    "nodeunit": "*",
+    "pusher.nodeenv": "https://bitbucket.org/pusherhq/pusher.nodeenv/get/master.tar.gz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/bcronin/surfacecurve-color.git"
+  },
+  "commitHash": "0c49d14d40b9f797b3ba21382808fa0439c6104d"
 }
