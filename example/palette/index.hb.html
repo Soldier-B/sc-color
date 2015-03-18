@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <style>
+            .color_block {
+                display     : inline-block;
+                width       : 32px;
+                height      : 32px;
+                border      : solid 1px rgba(0,0,0,.1);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="row" style="margin-top: 64px;">
+                <div class="col-sm-6">
+                    <h3>Hue Sets</h3>
+                    {{#each hue_sets }}
+                        <div>
+                            {{#each . }}
+                            <div class="color_block" style="background-color: {{.}}" data-color="{{.}}"></div>
+                            {{/each}}
+                        </div>
+                    {{/each}} 
+
+                    <h3>Tints</h3>
+                    {{#each tints }}
+                        <div>
+                            {{#each . }}
+                            <div class="color_block" style="background-color: {{.}}" data-color="{{.}}"></div>
+                            {{/each}}
+                        </div>
+                    {{/each}}
+                    <h3>Tones</h3>
+                    {{#each tones }}
+                        <div>
+                            {{#each . }}
+                            <div class="color_block" style="background-color: {{.}}" data-color="{{.}}"></div>
+                            {{/each}}
+                        </div>
+                    {{/each}}
+                    <h3>Shades</h3>
+                    {{#each shades }}
+                        <div>
+                            {{#each . }}
+                            <div class="color_block" style="background-color: {{.}}" data-color="{{.}}"></div>
+                            {{/each}}
+                        </div>
+                    {{/each}}
+                </div>
+                <div class="col-sm-6">
+                    <h3>Details</h3>
+                    <div id="details"></div>
+                </div>
+            </div>
+        </div>
+        <script src="jquery-1.11.2.min.js"></script>
+        <script src="bootstrap.min.js"></script>
+        <script src="surfacecurve-color.js"></script>
+        <script>
+        <!--
+        $(function() {
+            $(".color_block").click(function(evt) {
+                evt.preventDefault();
+
+                var c = surfacecurve.color(this.dataset.color);
+                var json = {
+                    html            : c.html(),
+                    hex3            : c.html('hex3'),
+                    hex6            : c.html('hex6'),
+                    rgb             : c.html('rgb'),
+                    rgba            : c.html('rgba'),
+                    hsl             : c.html('hsl'),
+                    hsla            : c.html('hsla'), 
+                    closest_keyword : c.html("keyword"),
+                };
+                
+                var $table = $("<table/>")
+                    .addClass("table table-condensed table-striped");
+                var $tbody = $("<tbody/>");
+                for (var key in json) {
+                    var $tr = $("<tr/>");
+                    $tr.append( $("<td/>").text(key) );
+                    $tr.append( $("<td/>").text(json[key]));
+                    $tbody.append($tr);
+                }
+                $table.append($tbody);
+                $("#details").html($table);
+            });
+        });
+        -->
+        </script>
+    </body>
+</html>
