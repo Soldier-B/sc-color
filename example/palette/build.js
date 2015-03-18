@@ -14,6 +14,9 @@ var input = {
         "#0060a2",
         "#ffce00",
         "#00d7e7",
+        "#ff6600",
+        "#c8008c",
+        "#a20000",
     ],
 };
 
@@ -23,7 +26,6 @@ var data = {
     shades   : [],
     hue_sets : [],
 };
-
 
 _.each(input.colors, function(color) {
     _.each(["tint", "tone", "shade"], function(verb) {    
