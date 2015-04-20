@@ -3,7 +3,7 @@
   "author": "Benjamin Cronin",
   "description": "A JavaScript color parsing and manipulation library designed for convenience and flexibility (rather than runtime performance).",
   "homepage": "http://surfacecurve.org",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "license": "MIT",
   "private": false,
   "main": "./lib/surfacecurve-color.js",
