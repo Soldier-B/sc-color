@@ -1,5 +1,5 @@
 {
-  "name": "surfacecurve-color",
+  "name": "sc-color",
   "author": "Benjamin Cronin",
   "description": "A JavaScript color parsing and manipulation library designed for convenience and flexibility (rather than runtime performance).",
   "homepage": "http://surfacecurve.org",
@@ -11,17 +11,14 @@
     "test": "node node_modules/nodeunit/bin/nodeunit test"
   },
   "dependencies": {
+  },
+  "devDependencies": {
     "handlebars": "^3.0.0",
     "nodeunit": "^0.9.1",
     "underscore": "1.4.x"
   },
-  "devDependencies": {
-    "nodeunit": "*",
-    "pusher.nodeenv": "https://bitbucket.org/pusherhq/pusher.nodeenv/get/master.tar.gz"
-  },
   "repository": {
     "type": "git",
     "url": "https://bitbucket.org/bcronin/surfacecurve-color.git"
-  },
-  "commitHash": "0c49d14d40b9f797b3ba21382808fa0439c6104d"
+  }
 }

@@ -64,12 +64,11 @@ c.blend('lawngreen','55%').hueRange(60,9);
 
 Pull requests and issues are welcome. If you want proactively contribute, see the [TODO](doc/todo.md) file for ways to contribute.
 
-
-## License
+#### License
 
 The source code is under the [MIT License](http://opensource.org/licenses/MIT).
 
-### References / Acknowledgments
+##### References / Acknowledgments
 
 * Michael Weichselgartner for the [luminance implementation](http://dev.w3.org/csswg/css-color/#luminance) recommendation 
 * Nir Dobovizki for the [contrastText() implementation](http://www.nbdtech.com/Blog/archive/2008/04/27/Calculating-the-Perceived-Brightness-of-a-Color.aspx)  
