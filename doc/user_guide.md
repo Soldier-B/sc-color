@@ -30,12 +30,8 @@ The ``surfacecurve-color`` library is a Javascript library for parsing, manipula
 ```html
 <script type="text/javascript" src="surfacecurve-color.js"></script>
 <script type="text/javascript">
-<!--
-    // In the browser, the library is globally namespaced under the surfacecurve
-    // symbol
-    var color = surfacecurve.color;
-    console.log(color("#F73").html());
--->
+    // The library uses the surfacecurve global symbol
+    console.log( surfacecurve.color("#F73").html() );
 </script>
 ```
 ##### Server
