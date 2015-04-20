@@ -1,11 +1,7 @@
-var nodeenv = require("pusher.nodeenv"),
-    color   = require("../lib/surfacecurve-color.js"),
+var color   = require("../lib/surfacecurve-color.js"),
     _       = require("underscore");
 
 var suite = {};
-
-// Merge in some standard tests
-_.extend(suite, nodeenv.nodeunit.suite);
 
 suite["Base"] =
 {

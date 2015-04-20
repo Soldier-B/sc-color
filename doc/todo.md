@@ -10,6 +10,8 @@
     * Use webpack or browserify
     * Minify with correct versioning
 * Switch to mocha / chai as the unit testing library
+	* Add a set of standard tests as separate module
+* Port the contents of this TODO file to Github issues (?)
 
 ## Features
 
