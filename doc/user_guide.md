@@ -7,26 +7,21 @@ The ``surfacecurve-color`` library is a Javascript library for parsing, manipula
 
 ## Table of Contents
 
-<!-- MarkdownTOC -->
-
-- [Installation][installation]
-- [CSS3 Formats][css3-formats]
-    - [Parsing][parsing]
-    - [Named Colors][named-colors]
-    - [Hexadecimal Format][hexadecimal-format]
-    - [Numeric RGB Format][numeric-rgb-format]
-    - [Numeric HSL Format][numeric-hsl-format]
-- [Extended Formats][extended-formats]
-    - [HSV Format][hsv-format]
-    - [RGBA8 Formats][rgba8-formats]
-    - [FLOAT3, FLOAT4 Formats][float3-float4-formats]
-    - [Packed Integer Formats][packed-integer-formats]
-- [Manipulation][manipulation]
-    - [Components][components]
-    - [Contrast Colors][contrast-colors]
-
-<!-- /MarkdownTOC -->
-
+- [Installation](#installation)
+- [CSS3 Formats](#css3-formats)
+    - [Parsing](#parsing)
+    - [Named Colors](#named-colors)
+    - [Hexadecimal Format](#hexadecimal-format)
+    - [Numeric RGB Format](#numeric-rgb-format)
+    - [Numeric HSL Format](#numeric-hsl-format)
+- [Extended Formats](#extended-formats)
+    - [HSV Format](#hsv-format)
+    - [RGBA8 Formats](#rgba8-formats)
+    - [FLOAT3, FLOAT4 Formats](#float3-float4-formats)
+    - [Packed Integer Formats](#packed-integer-formats)
+- [Manipulation](#manipulation)
+    - [Components](#components)
+    - [Contrast Colors](#contrast-colors)
 
 ## Installation
 
