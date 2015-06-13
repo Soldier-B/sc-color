@@ -2,9 +2,9 @@
 
 A JavaScript color **parsing** and **manipulation** library designed for convenience and flexibility (rather than runtime performance).  
 
-## Usage
+**See the [User Guide](doc/user_guide.md) for examples and full documentation.**
 
-See the [User Guide](doc/user_guide.md) for examples and full documentation.
+## Usage
 
 ```js
 var color = require("sc-color");
